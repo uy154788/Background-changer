@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0px auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+          background-color: #ffffff;
+        }
+        #aqua{
+          background-color: aquamarine;
+        }
+        #violet{
+          background-color: #ce9aff;
+        }
+        #black{
+          background-color: black;
+        }
+        #color-switcher{
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+
+    </div>
+    <h1 class="text">Abouut Us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur amet beatae enim error aliquid ratione distinctio laborum. Inventore tempora, necessitatibus iure reiciendis reprehenderit facilis architecto voluptates, voluptas in recusandae sapiente asperiores doloremque quos, corrupti nam vero? Vel dolorum excepturi ipsum maiores esse facere. Laudantium voluptas nisi, inventore est odio aperiam animi eveniet libero obcaecati quia magnam nulla, consequuntur fuga iste quidem voluptate dolorum enim distinctio ducimus. Perferendis vel non obcaecati, asperiores vero repellendus magnam porro quisquam exercitationem, reiciendis facilis qui rerum fugiat dolorum id eum! Impedit quos cum perferendis consectetur. Veritatis dolore vero odit cum molestias eaque doloribus, excepturi quaerat maiores soluta obcaecati molestiae temporibus ipsum iste illo, consequatur nihil sed delectus pariatur vel voluptatum qui odio incidunt! Nam quas pariatur nihil assumenda suscipit laudantium sit odio quos eveniet sed, impedit voluptate perferendis velit magnam dolor molestias iste ullam. Debitis vitae tempora modi odit, quis libero doloribus veritatis molestias soluta, nobis cum quos rem perferendis quas amet corrupti culpa sunt illo illum, in ut pariatur quia dolorum dolorem. Mollitia, fuga dicta! Nisi perspiciatis eum obcaecati illum quis ipsam deleniti necessitatibus maxime eveniet aut! Perspiciatis, assumenda impedit expedita repellendus suscipit ea saepe incidunt dolorem sequi ducimus tenetur vitae atque exercitationem soluta, officia excepturi! Incidunt consequatur cum mollitia, est ipsum exercitationem amet consectetur molestiae id magnam quia commodi animi ipsa at repudiandae suscipit impedit accusantium eveniet totam voluptas. Qui non dolorem beatae doloremque blanditiis! Quaerat possimus pariatur libero atque quibusdam distinctio! Beatae doloremque a animi officia quis reiciendis et excepturi officiis obcaecati suscipit. Quasi cum iure nostrum odit quisquam. Autem perferendis nulla animi nostrum itaque voluptates explicabo adipisci ab sed, labore rerum fuga esse consequatur ullam eos eum suscipit similique nam laborum nobis eaque aspernatur accusamus quas veniam. Debitis ducimus ipsum odit fuga incidunt soluta ratione dicta fugiat, iste ex dolorem, sequi ad vitae molestias porro facere provident modi delectus? Dolor beatae eum deleniti facilis, dolorem, obcaecati, commodi fuga porro assumenda dolores sunt libero quia blanditiis fugit. Facilis fuga vitae eius nulla animi voluptates soluta accusantium deleniti ducimus iusto dolorum mollitia sit exercitationem, rerum, optio nemo laborum eaque cumque ex distinctio! Commodi id mollitia libero voluptates ullam hic placeat. Perspiciatis atque eum enim rerum minus voluptatem, quidem quos pariatur tempore! Aliquam, nam repudiandae? Quisquam dolorem repellendus id hic a, illum, obcaecati voluptate placeat facere corrupti eligendi repudiandae at optio nulla veritatis, cupiditate aperiam laboriosam exercitationem aliquid. Repellat atque unde est, dolores ipsa architecto rem, earum dolore magnam cum magni odio aspernatur consequuntur odit quia ab error debitis eius eveniet, aliquid nihil exercitationem consequatur neque. Modi deleniti accusamus iste at dolorem temporibus pariatur accusantium eos nesciunt reprehenderit aspernatur culpa laboriosam autem qui dignissimos veniam neque mollitia, voluptas assumenda ducimus sit distinctio, cumque quod. Vitae deleniti aperiam repellendus perferendis quae! Obcaecati dolorum harum qui! Laudantium magni cumque provident modi praesentium, consectetur quaerat voluptates, facilis voluptatum assumenda tempore commodi vero minus esse atque molestias earum, voluptas nam reiciendis illo. Vel, tenetur fugit optio suscipit, tempora quisquam architecto nesciunt, amet libero ut accusamus impedit assumenda?
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor= color;
+            let txt=document.getElementsByClassName("text");
+            if(color=="#000000"){
+               for(let elm of txt){
+                elm.style.color="white";
+               }
+            }
+            else{
+                for(let elm of txt){
+                elm.style.color="black";
+               } 
+            }
+        }
+
+    </script>
+</body>
+</html>
